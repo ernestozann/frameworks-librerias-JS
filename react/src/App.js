@@ -1,4 +1,7 @@
+import React from "react";
 import Form from "./form";
+import { Title } from "./Title";
+import { Theme } from "./Theme";
 
 const movies = [
   {
@@ -13,11 +16,11 @@ const movies = [
 
 export default function App() {
   return (
-    <div>
-      <h2>Peliculas</h2>
+    <Theme>
+      <Title>Peliculas</Title>
       {movies.map((movie) => (
         <Form movie={movie} />
       ))}
-    </div>
+    </Theme>
   );
 }
