@@ -13,13 +13,19 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import "./styles/_variables.scss";
+
+html,
+body {
+  background: $bg;
+  color: $color;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h2 {
+  border-bottom: 1px solid $color;
+  padding: 10px;
 }
 </style>
